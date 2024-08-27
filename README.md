@@ -1,13 +1,13 @@
-![alt text](Assignments.png)
+![Assignments](Screenshots/Assignments.png)
 
-![alt text](StudentVerification_register.png)
+![StudentVerification register](Screenshots/StudentVerification_register.png)
 
-![alt text](MenuNavFragment_add.png)
+![MenuNavFragment add](Screenshots/MenuNavFragment_add.png)
 
-![alt text](MenuNavFragment_products.png)
+![MenuNavFragment products](Screenshots/MenuNavFragment_products.png)
 
-![alt text](RockPaperScissors_result.png)
+![RockPaperScissors start](Screenshots/RockPaperScissors_start.png)
 
-![alt text](RockPaperScissors_start.png)
+![RockPaperScissors result](Screenshots/RockPaperScissors_result.png)
 
-![alt text](SpinnerDemo_registration.png)
+![SpinnerDemo registration](Screenshots/SpinnerDemo_registration.png)
