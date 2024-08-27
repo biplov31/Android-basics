@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:gravity="center"
+    android:weightSum="3"
+    >
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.4"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text="First"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#111"
+            android:id="@+id/firstBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:text="Second"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="12dp"
+            android:backgroundTint="#111"
+            android:id="@+id/secondBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text="Third"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#111"
+            android:id="@+id/thirdBtn"/>
+
+    </LinearLayout>
+
+<!--    static -->
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+<!--  can be manipulated with Java for dynamic content  -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="com.example.fragmentdemo.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.6"
+        android:layout_marginBottom="28dp">
+
+
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+</LinearLayout>

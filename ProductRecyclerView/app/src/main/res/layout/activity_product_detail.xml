@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="24dp"
+    android:id="@+id/productDetailWrapper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#222"/>
+
+        <TextView
+            android:id="@+id/productDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The North Face"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#222"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:background="#eee"
+        android:padding="24dp"
+        android:layout_marginVertical="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#222"/>
+
+        <TextView
+            android:id="@+id/productDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Very suitable for winter; fully water resistent."
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#222"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#222"/>
+
+        <TextView
+            android:id="@+id/productDetailPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 5000"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#222"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewMoreBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="View more"
+        android:textSize="28sp"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:backgroundTint="#111"/>
+
+</LinearLayout>

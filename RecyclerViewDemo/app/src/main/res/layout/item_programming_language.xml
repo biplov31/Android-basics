@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="48dp"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="12dp"
+    app:cardBackgroundColor="#f40707"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#ddd">
+
+        <TextView
+            android:id="@+id/tvProgrammingLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textAlignment="center"
+            android:textColor="#F40707"
+            android:textSize="60sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/foundedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1990"
+            android:textAlignment="center"
+            android:textColor="#8C0404"
+            android:textSize="32sp" />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BCA"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#dddddd"
+        android:id="@+id/tvTitle"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="#aaaaaa"
+        android:layout_below="@id/tvTitle"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student name: "
+        android:background="#292828"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@id/tvTitle"
+        android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty: "
+        android:background="#292828"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_marginVertical="8dp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@id/name"
+        android:id="@+id/faculty" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department: "
+        android:background="#292828"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@id/faculty" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course info: "
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_below="@id/image"
+        android:id="@+id/courseInfo"/>
+
+    <LinearLayout
+        android:id="@+id/courseInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/courseInfo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Great course!"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Practical course!"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseInfoList"
+        android:text="Passed semesters:"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/passedSemesters"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passedSemesters"
+        android:id="@+id/passedSemestersList">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st sem"
+                android:textSize="24sp"
+                android:background="#292828"
+                android:textColor="#ffffff"
+                android:id="@+id/firstSem"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd sem"
+                android:textSize="24sp"
+                android:background="#292828"
+                android:textColor="#ffffff"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@id/passedSemesters"
+                android:layout_toRightOf="@id/firstSem"
+                android:id="@+id/secondSem"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3rd sem"
+                android:textSize="24sp"
+                android:background="#292828"
+                android:textColor="#ffffff"
+                android:layout_below="@id/passedSemesters"
+                android:layout_toRightOf="@id/secondSem"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More info"
+        android:textSize="24sp"
+        android:padding="12dp"
+        android:layout_margin="24dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:foregroundGravity="center"/>
+
+</RelativeLayout>

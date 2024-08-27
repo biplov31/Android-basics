@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:background="#dddddd"
+        android:textAlignment="center"
+        android:id="@+id/pageTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:backgroundTint="#ff0000"
+        android:layout_below="@+id/pageTitle"
+        android:id="@+id/redBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:backgroundTint="#00ff00"
+        android:layout_below="@+id/pageTitle"
+        android:layout_alignRight="@id/pageTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerTxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Above"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/centerTxt"
+        android:layout_above="@id/centerTxt"
+        android:id="@+id/aboveTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/centerTxt"
+        android:layout_below="@id/centerTxt"
+        android:id="@+id/belowTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Further above"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/aboveTxt"
+        android:layout_above="@id/aboveTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Further above"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/aboveTxt"
+        android:layout_below="@id/belowTxt"
+        android:id="@+id/furtherBelowTxt"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:backgroundTint="#000000"
+        android:layout_above="@+id/bottomBtns"
+        android:id="@+id/blackBtn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBtns">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:backgroundTint="#0000ff"
+            android:id="@+id/blueBtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:backgroundTint="#FFEB3B" />
+    </LinearLayout>
+</RelativeLayout>

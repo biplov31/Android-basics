@@ -1,0 +1,14 @@
+.gradle
+.idea
+gradle
+build.gradle.kts
+gradle
+gradlew
+local
+settings.gradle.kts
+
+build
+proguard-rules.pro
+
+androidTest
+test
